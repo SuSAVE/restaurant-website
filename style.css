@@ -1,0 +1,211 @@
+/* ทั่วไป */
+body {
+  font-family: 'Kanit', sans-serif;
+  background-color: #fff7ec;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #e65c00;
+}
+
+/* Menu Section */
+.menu-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.menu-box {
+  background-color: #ffcc80;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.menu-box h2 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.menu-box p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.menu-box span {
+  font-weight: bold;
+  color: #e65c00;
+}
+
+.menu-box button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.menu-box button:hover {
+  background-color: #fb8c00;
+}
+
+.menu-box:hover {
+  transform: scale(1.05);
+  background-color: #ffb74d;
+}
+
+/* Button styles */
+.cart-btn, .back-btn {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cart-btn:hover, .back-btn:hover {
+  background-color: #388e3c;
+}
+
+/* Cart page styles */
+#cart-page {
+  text-align: center;
+}
+
+#cart-list {
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+
+#cart-list li {
+  margin: 10px 0;
+  padding: 10px;
+  background: #ffe0b2;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#promo-code {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #fb8c00;
+}
+/* เพิ่มสไตล์ปุ่มบวก/ลบ */
+button {
+  padding: 6px 12px;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin: 0 5px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #fb8c00;
+}
+
+#total {
+  font-size: 1.2em;
+  margin-top: 20px;
+  color: #333;
+}
+.cart-btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto; /* การตั้งค่า margin auto จะทำให้ปุ่มอยู่กลาง */
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+.cart-btn:hover {
+  background-color: #388e3c;
+}
+.menu-box h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #800080; /* เปลี่ยนสีฟอนต์ให้เข้มขึ้น */
+  text-transform: uppercase; /* ทำให้ข้อความเป็นตัวพิมพ์ใหญ่ทั้งหมด */
+  font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ Poppins */
+  letter-spacing: 1px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.menu-box:hover h2 {
+  color: #ff9800; /* เมื่อ hover ปุ่ม, สีฟอนต์จะเปลี่ยนเป็นสีส้ม */
+  transform: scale(1.1); /* เพิ่มขนาดฟอนต์เล็กน้อยเมื่อ hover */
+}
+/* ปรับขนาดการแสดงผลสำหรับหน้าจอที่มีความกว้างไม่เกิน 768px (มือถือ) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .menu-container {
+    flex-direction: column; /* เปลี่ยนเมนูให้แสดงในแนวตั้ง */
+  }
+
+  .menu-box {
+    width: 100%; /* ให้แต่ละเมนูใช้พื้นที่เต็มความกว้าง */
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .cart-btn, .back-btn {
+    padding: 8px 16px;
+  }
+}
+
+
+
+
